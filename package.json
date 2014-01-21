@@ -12,5 +12,9 @@
   },
   "author": "Steven Schobert <spschobert@gmail.com> (stevenschobert.com)",
   "license": "MIT",
-  "homepage": "https://github.com/stevenschobert/coffee-api"
+  "homepage": "https://github.com/stevenschobert/coffee-api",
+  "dependencies": {
+    "coffee-bear": "~0.1.0",
+    "express": "~3.4.8"
+  }
 }
