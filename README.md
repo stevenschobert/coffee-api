@@ -1,4 +1,4 @@
-coffee-bear-api
+coffee-api
 ===============
 
-Coffee measurements API using coffee-bear
+Coffee measurements API using [coffee-bear](https://github.com/stevenschobert/coffee-bear).
