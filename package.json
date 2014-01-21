@@ -1,0 +1,16 @@
+{
+  "name": "coffee-api",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stevenschobert/coffee-api.git"
+  },
+  "author": "Steven Schobert <spschobert@gmail.com> (stevenschobert.com)",
+  "license": "MIT",
+  "homepage": "https://github.com/stevenschobert/coffee-api"
+}
