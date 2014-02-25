@@ -29,10 +29,11 @@ app.get('/api/v1/measurements/:cups?', function (req, res) {
 // support slack requests
 app.get('/webhooks/slack', function (req, res) {
   coffeeBear(function (err, data) {
-    var cups = req.query.text;
+    var cups = req.query.text,
+        responseString = "";
 
     if (err) {
-      res.send('Sorry, something went wrong processing your request');
+      res.send('Sorry, something went wrong processing your request.');
     }
 
     if (cups === undefined) {
@@ -41,7 +42,8 @@ app.get('/webhooks/slack', function (req, res) {
     }
 
     if (data[cups] !== undefined) {
-      res.send(JSON.stringify(data[cups]));
+      responseString += cups + " cups? Okay, try " + data[cups].coffee.grams + " grams of coffee, and " + parseFloat(data[cups].water.liters) * 1000 + " grams of water.";
+      res.send(responseString);
       return;
     }
 
